@@ -1,6 +1,6 @@
 # Tukur Solutions — sitio de marca
 
-Sitio estático responsive, hecho en HTML, CSS y JavaScript sin dependencias de compilación. La dirección visual usa la paleta terracota solicitada, Manrope y el archivo original del logo, sin alterarlo.
+Sitio estático responsive, hecho en HTML, CSS y JavaScript sin dependencias de compilación. La dirección visual usa una paleta formal de marfil y cobalto, Manrope y el PNG transparente original del logo, sin alterarlo.
 
 ## Vista previa local
 
@@ -21,10 +21,9 @@ Después visitá `http://localhost:8000`.
 
 ## Portafolio
 
-Las tarjetas de FIPQ y Witchu ahora describen el contenido visible en sus sitios y enlazan a las páginas publicadas. Sus gráficos son composiciones editoriales inspiradas en las identidades de cada proyecto, no capturas de pantalla.
+Las tarjetas de FIPQ y Witchu describen el contenido y el aporte de Tukur en cada proyecto, y enlazan a las páginas publicadas. Sus gráficos son composiciones editoriales inspiradas en las identidades de cada proyecto, no capturas de pantalla.
 
 ## Antes de anunciarlo como sitio oficial
 
-- Añadir el canal de contacto real de Tukur (correo, WhatsApp o formulario conectado).
 - Confirmar el texto de servicios y el alcance que Tukur quiere ofrecer hoy.
 - Confirmar el dominio y configurar el nombre canónico del sitio y los metadatos sociales.
