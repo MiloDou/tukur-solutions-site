@@ -125,20 +125,19 @@
     .work-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(22px, 4vw, 46px); }
     .project { min-width: 0; }
     .project-art { position: relative; min-height: clamp(245px, 30vw, 380px); display: grid; place-items: center; overflow: hidden; border: 1px solid var(--line); background: var(--sand); }
-    .fipq-art { background: #ebe1d6; }
-    .fipq-sheet { width: 74%; min-height: 72%; display: flex; flex-direction: column; justify-content: space-between; padding: 23px; border: 1px solid rgba(41, 38, 34, .22); background: var(--paper-strong); transform: rotate(-2deg); box-shadow: 0 15px 34px rgba(41, 38, 34, .08); }
-    .fipq-mark { display: flex; align-items: center; justify-content: space-between; color: var(--accent-deep); font-size: 12px; font-weight: 800; letter-spacing: .1em; }
-    .fipq-rule { width: 32px; height: 1px; background: var(--accent); }
-    .fipq-sheet strong { max-width: 350px; font-size: clamp(25px, 4vw, 48px); line-height: 1.08; letter-spacing: -.04em; font-weight: 700; }
-    .fipq-sheet span { max-width: 240px; color: var(--muted); font-size: 12px; line-height: 1.5; }
-    .artist-art { background: #24221f; }
-    .artist-sheet { width: 78%; min-height: 75%; display: grid; grid-template-columns: .85fr 1.15fr; align-items: stretch; border: 1px solid rgba(255,255,255,.22); color: #f8f4ee; transform: rotate(1.5deg); }
+    .fipq-art { background: #171716; color: #f8f4ee; }
+    .fipq-sheet { width: 82%; min-height: 78%; display: flex; flex-direction: column; justify-content: space-between; padding: 8px 4px; }
+    .fipq-mark { display: flex; align-items: center; justify-content: space-between; padding-bottom: 10px; border-bottom: 1px solid #4b4945; color: #d2cec8; font-size: 10px; font-weight: 800; letter-spacing: .12em; }
+    .fipq-sheet strong { max-width: 580px; font-size: clamp(34px, 6vw, 76px); line-height: .91; letter-spacing: -.075em; font-weight: 800; text-transform: lowercase; }
+    .fipq-sheet > span { max-width: 300px; color: #bdb9b3; font-size: 11px; line-height: 1.5; letter-spacing: .1em; text-transform: uppercase; }
+    .artist-art { background: #e8eeee; }
+    .artist-sheet { width: 84%; min-height: 80%; display: grid; grid-template-columns: 1.2fr .8fr; align-items: stretch; color: #171817; }
     .artist-copy { display: flex; flex-direction: column; justify-content: space-between; padding: 19px 12px 17px 17px; }
-    .artist-copy span { color: #d6b8a6; font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-    .artist-copy strong { font-size: clamp(21px, 3vw, 37px); line-height: .95; letter-spacing: -.045em; }
-    .artist-piece { position: relative; margin: 8px; overflow: hidden; background: #b35d42; }
-    .artist-piece::before { position: absolute; top: 11%; left: 8%; width: 67%; height: 78%; border: 1px solid rgba(255,255,255,.6); border-radius: 48% 52% 42% 58% / 51% 41% 59% 49%; transform: rotate(-28deg); content: ""; }
-    .artist-piece::after { position: absolute; right: 11%; bottom: 9%; width: 44%; height: 58%; border: 1px solid rgba(41,38,34,.7); border-radius: 47% 53% 63% 37% / 41% 50% 50% 59%; transform: rotate(31deg); content: ""; }
+    .artist-copy span { color: #424744; font-size: 10px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+    .artist-copy strong { font-size: clamp(23px, 3.8vw, 48px); line-height: .94; letter-spacing: -.055em; }
+    .artist-piece { position: relative; margin: 8px; overflow: hidden; background: linear-gradient(145deg, #e7ff45 0 37%, #f0009b 37% 100%); }
+    .artist-piece::before { position: absolute; top: 9%; left: 11%; width: 68%; height: 75%; border: 1px solid rgba(20,20,20,.86); border-radius: 48% 52% 42% 58% / 51% 41% 59% 49%; transform: rotate(-28deg); box-shadow: 10px 12px 0 rgba(20,20,20,.88); content: ""; }
+    .artist-piece::after { position: absolute; right: 4%; bottom: 17%; width: 52%; height: 7px; background: #171817; transform: rotate(-34deg); content: ""; }
     .project-caption { display: flex; align-items: start; justify-content: space-between; gap: 16px; padding-block: 19px 14px; border-bottom: 1px solid var(--line); }
     .project-caption h3 { margin: 0 0 5px; font-size: 20px; font-weight: 700; }
     .project-caption p { max-width: 490px; margin: 0; color: var(--muted); font-size: 13px; line-height: 1.65; }
@@ -151,6 +150,8 @@
     .case-detail[data-open="true"] { grid-template-rows: 1fr; }
     .case-detail > div { overflow: hidden; }
     .case-detail p { margin: 0; padding: 15px 4px 4px 0; color: var(--muted); font-size: 13px; line-height: 1.75; }
+    .project-link { display: inline-flex; align-items: center; gap: 8px; margin-top: 14px; color: var(--accent-deep); font-size: 12px; font-weight: 800; text-decoration-color: color-mix(in srgb, var(--accent) 45%, transparent); text-underline-offset: .25em; }
+    .project-link .arrow { font-size: 15px; }
 
     .closing { position: relative; overflow: hidden; display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 35px; padding: clamp(38px, 6vw, 76px); background: var(--ink); color: var(--paper-strong); }
     .closing::after { position: absolute; top: -150px; right: 15%; width: 330px; aspect-ratio: 1; border: 1px solid rgba(255,255,255,.13); border-radius: 50%; box-shadow: 0 0 0 32px rgba(255,255,255,.03), 0 0 0 70px rgba(255,255,255,.025); content: ""; pointer-events: none; }
@@ -346,24 +347,26 @@
       <div class="shell">
         <div class="work-head">
           <h2 id="work-title">Ideas que ya tomaron forma.</h2>
-          <p>Dos proyectos distintos, con algo en común: entender qué querían comunicar y diseñar una experiencia digital a su medida.</p>
+          <p>FIPQ reúne un festival y una editorial en una casa digital; Witchu presenta la práctica visual y artística de Luis. Dos sitios construidos desde voces y necesidades distintas.</p>
         </div>
         <div class="work-grid">
           <article class="project">
-            <div class="project-art fipq-art" aria-label="Composición editorial del caso FIPQ">
-              <div class="fipq-sheet"><div class="fipq-mark"><span>FIPQ · POESÍA</span><i class="fipq-rule" aria-hidden="true"></i></div><strong>Una casa para las palabras.</strong><span>Identidad y contenido reunidos en una experiencia digital.</span></div>
+            <div class="project-art fipq-art" aria-label="Composición tipográfica inspirada en el sitio del Festival Internacional de Poesía de Quetzaltenango">
+              <div class="fipq-sheet"><div class="fipq-mark"><span>DESDE XELAJU NO’J</span><span>FIPQ</span></div><strong>festival<br>internacional<br>de poesía</strong><span>QUETZALTENANGO · ENCUENTRO · MEMORIA</span></div>
             </div>
-            <div class="project-caption"><div><h3>FIPQ</h3><p>Una página para centralizar la información del festival y darle una identidad visual reconocible.</p></div><span class="project-tag">Cultura</span></div>
+            <div class="project-caption"><div><h3>Festival Internacional de Poesía de Quetzaltenango</h3><p>Una plataforma cultural que conecta el festival con Metáfora Editores.</p></div><span class="project-tag">Cultura</span></div>
             <button class="case-toggle" type="button" aria-expanded="false" aria-controls="case-fipq"><span>Conocer el enfoque</span><span class="plus" aria-hidden="true">+</span></button>
-            <div class="case-detail" id="case-fipq" data-open="false"><div><p>El reto era que la información del festival no se perdiera entre publicaciones. La propuesta organiza el contenido en un sitio central y cuida su tono visual desde una sensibilidad poética. Proyecto desarrollado como parte del equipo de FIPQ.</p></div></div>
+            <div class="case-detail" id="case-fipq" data-open="false"><div><p>El sitio enlaza dos espacios que comparten una misma voz: el Festival Internacional de Poesía de Quetzaltenango y Metáfora Editores. La portada presenta el proyecto desde Xelajuj No’j y conduce a sus espacios principales, con la memoria cultural en el centro.</p></div></div>
+            <a class="project-link" href="https://web-fipq.animesino.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="Visitar el sitio de FIPQ en una nueva pestaña">Visitar el sitio <span class="arrow" aria-hidden="true">↗</span></a>
           </article>
           <article class="project">
-            <div class="project-art artist-art" aria-label="Composición editorial del portafolio artístico de Luis">
-              <div class="artist-sheet"><div class="artist-copy"><span>Portafolio artístico</span><strong>El trabajo, en su propio espacio.</strong><span>Obra · Proyectos · Selección</span></div><div class="artist-piece" aria-hidden="true"></div></div>
+            <div class="project-art artist-art" aria-label="Composición tipográfica inspirada en el portafolio de Luis Gómez">
+              <div class="artist-sheet"><div class="artist-copy"><span>Luis Gómez · Witchu</span><strong>Ideas claras.<br>Diseño con carácter.</strong><span>Diseño gráfico · Ilustración</span></div><div class="artist-piece" aria-hidden="true"></div></div>
             </div>
-            <div class="project-caption"><div><h3>Portafolio de Luis</h3><p>Una vitrina digital para presentar su trabajo artístico y recorrerlo con fluidez.</p></div><span class="project-tag">Portafolio</span></div>
+            <div class="project-caption"><div><h3>Witchu · Luis Gómez</h3><p>Un portafolio de diseño gráfico e ilustración con una voz visual propia.</p></div><span class="project-tag">Portafolio</span></div>
             <button class="case-toggle" type="button" aria-expanded="false" aria-controls="case-luis"><span>Conocer el enfoque</span><span class="plus" aria-hidden="true">+</span></button>
-            <div class="case-detail" id="case-luis" data-open="false"><div><p>El diseño y la distribución se definieron alrededor de su trabajo y de cómo quería presentarlo. El proceso respetó su preferencia por una propuesta artística hecha con cuidado, no resuelta automáticamente.</p></div></div>
+            <div class="case-detail" id="case-luis" data-open="false"><div><p>La experiencia presenta a Luis y sus dos áreas de trabajo, organiza sus proyectos por categoría, explica servicios y paquetes, y acerca a cada visitante a una conversación directa por WhatsApp. Su sitio también acredita a Tukur Solutions en el desarrollo.</p></div></div>
+            <a class="project-link" href="https://witchustudio.com/#inicio" target="_blank" rel="noopener noreferrer" aria-label="Visitar el portafolio de Luis Gómez en una nueva pestaña">Visitar el portafolio <span class="arrow" aria-hidden="true">↗</span></a>
           </article>
         </div>
       </div>
