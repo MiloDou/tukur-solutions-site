@@ -77,9 +77,9 @@
     .gear-tooth, .gear-ring { fill: var(--paper); stroke: var(--accent); stroke-width: 1.2; vector-effect: non-scaling-stroke; }
     .gear-inner { fill: none; stroke: color-mix(in srgb, var(--accent) 58%, transparent); stroke-width: 1; vector-effect: non-scaling-stroke; }
     .gear-spoke { fill: none; stroke: color-mix(in srgb, var(--accent) 45%, transparent); stroke-width: 1; vector-effect: non-scaling-stroke; }
-    .logo-halo { position: absolute; z-index: -1; width: 242px; height: 242px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--accent) 18%, var(--paper-strong)) 0, color-mix(in srgb, var(--accent) 7%, var(--paper)) 49%, transparent 72%); filter: blur(8px); }
-    .logo-plate { position: relative; display: grid; width: 194px; height: 224px; place-items: center; background: var(--paper-strong); box-shadow: 0 18px 42px rgba(41, 38, 34, .12); }
-    .logo-plate img { display: block; width: 154px; height: 182px; object-fit: contain; }
+    .logo-halo { position: absolute; z-index: -1; width: 242px; height: 242px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--accent) 28%, transparent) 0, color-mix(in srgb, var(--accent) 13%, transparent) 46%, transparent 72%); filter: blur(10px); }
+    .logo-wrap { position: relative; display: grid; width: 194px; height: 224px; place-items: center; }
+    .logo-wrap img { display: block; width: 154px; height: 182px; object-fit: contain; filter: drop-shadow(0 0 14px color-mix(in srgb, var(--accent) 30%, transparent)); }
     .stage-label { position: absolute; z-index: 2; padding: 8px 11px; border: 1px solid var(--line); background: var(--paper-strong); color: var(--muted); font-size: 12px; font-weight: 600; box-shadow: 0 8px 18px rgba(41, 38, 34, .06); }
     .stage-label-human { top: 19%; left: 1%; }
     .stage-label-ai { right: 0; bottom: 19%; }
@@ -176,8 +176,8 @@
       .nav .nav-cta { padding: 10px 12px; }
       .hero { gap: 20px; min-height: auto; padding-block: 68px 77px; }
       .brand-stage { min-height: 350px; }
-      .logo-plate { width: 166px; height: 190px; }
-      .logo-plate img { width: 132px; height: 158px; }
+      .logo-wrap { width: 166px; height: 190px; }
+      .logo-wrap img { width: 132px; height: 158px; }
       .stage-label-human { left: -1%; }
       .section-heading { grid-template-columns: 1fr; gap: 16px; }
       .section-heading p { max-width: 520px; }
@@ -203,8 +203,8 @@
       .brand-stage::after { width: 224px; }
       .gear-art { width: 310px; }
       .logo-halo { width: 204px; height: 204px; }
-      .logo-plate { width: 148px; height: 171px; }
-      .logo-plate img { width: 120px; height: 142px; }
+      .logo-wrap { width: 148px; height: 171px; }
+      .logo-wrap img { width: 120px; height: 142px; }
       .stage-label-human { top: 13%; left: 0; }
       .stage-label-ai { right: 0; bottom: 16%; }
       .stage-caption { bottom: 0; }
@@ -292,7 +292,7 @@
         <span class="stage-link" aria-hidden="true"></span>
         <span class="stage-label stage-label-human">Inteligencia natural</span>
         <span class="stage-label stage-label-ai">Inteligencia artificial</span>
-        <div class="logo-plate"><img src="assets/tukur-logo-original.png" alt="" fetchpriority="high"></div>
+        <div class="logo-wrap"><img src="assets/tukur-logo-original.png" alt="" fetchpriority="high"></div>
         <p class="stage-caption">Dos inteligencias. Una dirección humana.</p>
       </div>
     </section>
