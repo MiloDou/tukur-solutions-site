@@ -1,0 +1,35 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-17T04:38:57.191Z",
+        "reason": "Agent: sections have 68–118px vertical padding, header has 68–82px height, and project facts have 16px vertical padding; wrapper-border warning is a false positive"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-17T04:38:57.313Z",
+        "reason": "User chose the formal marfil and cobalt palette for Tukur Solutions"
+      },
+      {
+        "rule": "design-system-font-size",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-17T04:38:57.446Z",
+        "reason": "Agent: this one-page site uses Manrope with documented roles and intentional fluid responsive sizes; functional text is at least 12px"
+      }
+    ]
+  }
+}
