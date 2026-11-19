@@ -163,7 +163,7 @@
       {
         "name": "gear-turn",
         "value": "52s linear infinite",
-        "purpose": "Giro lento del engranaje detrás del logo."
+        "purpose": "Giro lento del engranaje; su entorno responde de forma leve al cursor y al desplazamiento."
       },
       {
         "name": "hover",
@@ -184,6 +184,21 @@
         "name": "reduced-motion",
         "value": "prefers-reduced-motion: reduce",
         "purpose": "Pausa animaciones continuas y elimina transiciones cuando se solicita menos movimiento."
+      },
+      {
+        "name": "philosophy-line",
+        "value": "1.3s var(--ease)",
+        "purpose": "Dibuja una conexión bajo la comparación sin cruzar el texto."
+      },
+      {
+        "name": "process-line",
+        "value": "scroll-linked",
+        "purpose": "Señala el avance de lectura al margen de los tres pasos."
+      },
+      {
+        "name": "project-annotations",
+        "value": ".45s var(--ease)",
+        "purpose": "Revela notas sobre cada captura al abrir la historia del proyecto."
       }
     ],
     "breakpoints": [
@@ -245,7 +260,7 @@
       "Blanco, tinta azul oscuro y un único acento cobalto.",
       "Manrope en todos los textos, con pesos asignados por función.",
       "Composición editorial de bordes rectos, líneas finas y círculos como motivo secundario.",
-      "Movimiento lento en el engranaje y respuestas breves al explorar proyectos."
+      "Movimiento lento en el engranaje, trazos que acompañan la lectura y respuestas breves al explorar proyectos."
     ],
     "rules": [
       {

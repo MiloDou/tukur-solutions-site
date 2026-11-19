@@ -73,7 +73,7 @@ La identidad usa mucho espacio, una jerarquía editorial clara y una paleta cort
 - Blanco, tinta azul oscuro y un único acento cobalto.
 - Manrope en todos los textos, con pesos asignados por función.
 - Composición editorial de bordes rectos, líneas finas y círculos como motivo secundario.
-- Movimiento lento en el engranaje y respuestas breves al explorar proyectos.
+- Movimiento lento en el engranaje, trazos que acompañan la lectura y respuestas breves al explorar proyectos.
 
 ## Colors
 
@@ -146,19 +146,19 @@ Barra superior pegajosa con logo a la izquierda, enlaces directos a secciones y 
 
 ### Comparación de inteligencias
 
-Dos bloques simétricos con títulos directos y explicaciones claras. La inteligencia natural comprende, analiza, decide y diseña; la artificial ayuda a explorar y construir bajo dirección humana. Ninguna animación cruza o desplaza el texto.
+Dos bloques simétricos con títulos directos y explicaciones claras. La inteligencia natural comprende, analiza, decide y diseña; la artificial ayuda a explorar y construir bajo dirección humana. Los trazos se dibujan bajo los títulos y al pie de la comparación; ninguna animación cruza o desplaza el texto.
 
 ### Servicios y proceso
 
-Los divisores ordenan los servicios sin añadir iconos genéricos. Cada servicio dice qué problema ayuda a resolver. La numeración se reserva para los tres pasos del proceso: escuchar, definir y construir con el cliente.
+Los divisores ordenan los servicios sin añadir iconos genéricos. Cada servicio dice qué problema ayuda a resolver. La numeración se reserva para los tres pasos del proceso: escuchar, definir y construir con el cliente. Una línea al margen avanza con la lectura sin condicionar el acceso al contenido.
 
 ### Casos de trabajo
 
-Cada caso debe mostrar una imagen reconocible del proyecto publicado, su nombre, el problema que resolvía, el aporte concreto de Tukur y un enlace al sitio. La acción para explorar el sitio permanece visible sobre la captura y responde al cursor o al foco. Las capturas son evidencia de trabajo, no decoración. Si se usa una composición editorial adicional, distinguirla de una captura real. No atribuir resultados, métricas ni tareas que el proyecto no documente.
+Cada caso debe mostrar una imagen reconocible del proyecto publicado, su nombre, el problema que resolvía, el aporte concreto de Tukur y un enlace al sitio. La acción para explorar el sitio permanece visible sobre la captura y responde al cursor o al foco. Al abrir el proceso, dos anotaciones señalan decisiones en la imagen y una lista explica necesidad, decisión y entrega. En móvil, la lista conserva toda la información sin superponer etiquetas a la captura. Las capturas son evidencia de trabajo, no decoración. Si se usa una composición editorial adicional, distinguirla de una captura real. No atribuir resultados, métricas ni tareas que el proyecto no documente.
 
 ### Escenario del logo y movimiento
 
-El logo es el punto focal; el engranaje gira lentamente (`52s` por vuelta). Las capturas responden al cursor o al foco con un acercamiento leve y una invitación a explorar el sitio. Mantener el control visible para reducir animaciones y respetar `prefers-reduced-motion`. El movimiento nunca condiciona la lectura ni el acceso a contenido.
+El logo es el punto focal; el engranaje gira lentamente (`52s` por vuelta) y su entorno responde hasta cinco grados al cursor o al desplazamiento. Las capturas responden al cursor o al foco con un acercamiento leve y una invitación a explorar el sitio. Los trazos de filosofía y proceso avanzan con la lectura. Mantener el control visible para reducir animaciones y respetar `prefers-reduced-motion`. El movimiento nunca condiciona la lectura ni el acceso a contenido.
 
 ## Do's and Don'ts
 
