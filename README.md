@@ -21,7 +21,7 @@ Después visitá `http://localhost:8000`.
 
 ## Portafolio
 
-Las tarjetas de FIPQ y Witchu muestran capturas reales y optimizadas de las páginas públicas. Al pasar el cursor o enfocar una captura aparece una acción clara para explorar el sitio publicado; en pantallas táctiles permanece visible. El aporte y la entrega de cada proyecto están visibles antes de abrir los detalles. Los colores propios de cada proyecto aparecen dentro de su captura; la interfaz de Tukur mantiene su paleta de blanco, tinta y cobalto.
+Las tarjetas de FIPQ y Witchu muestran capturas reales y optimizadas de las páginas públicas. Cada captura tiene una acción visible para explorar el sitio publicado y responde al cursor o al foco con un movimiento leve. El aporte y la entrega de cada proyecto están visibles antes de abrir los detalles. Los colores propios de cada proyecto aparecen dentro de su captura; la interfaz de Tukur mantiene su paleta de blanco, tinta y cobalto.
 
 La oferta principal publicada se concentra en sitios web, portafolios y dirección digital. Las necesidades de automatización, integraciones y análisis de datos se evalúan según alcance y equipo, como expresa el cuestionario de Tukur.
 

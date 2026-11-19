@@ -154,7 +154,7 @@ Los divisores ordenan los servicios sin añadir iconos genéricos. Cada servicio
 
 ### Casos de trabajo
 
-Cada caso debe mostrar una imagen reconocible del proyecto publicado, su nombre, el problema que resolvía, el aporte concreto de Tukur y un enlace al sitio. La acción para explorar el sitio aparece sobre la captura al pasar el cursor o enfocarla y queda visible en pantallas táctiles. Las capturas son evidencia de trabajo, no decoración. Si se usa una composición editorial adicional, distinguirla de una captura real. No atribuir resultados, métricas ni tareas que el proyecto no documente.
+Cada caso debe mostrar una imagen reconocible del proyecto publicado, su nombre, el problema que resolvía, el aporte concreto de Tukur y un enlace al sitio. La acción para explorar el sitio permanece visible sobre la captura y responde al cursor o al foco. Las capturas son evidencia de trabajo, no decoración. Si se usa una composición editorial adicional, distinguirla de una captura real. No atribuir resultados, métricas ni tareas que el proyecto no documente.
 
 ### Escenario del logo y movimiento
 
