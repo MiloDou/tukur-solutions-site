@@ -3,19 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f4f2eb">
-  <meta name="description" content="Tukur Solutions diseña y construye sitios web con identidad propia, criterio humano y sensibilidad artística.">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Tukur Solutions diseña y construye soluciones digitales con identidad propia, criterio humano y sensibilidad artística.">
   <title>Tukur Solutions — Tecnología con sensibilidad artística</title>
   <link rel="canonical" href="https://tukursolutions.com/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_GT">
   <meta property="og:site_name" content="Tukur Solutions">
   <meta property="og:title" content="Tukur Solutions — Tecnología con sensibilidad artística">
-  <meta property="og:description" content="Sitios web con identidad propia, criterio humano y sensibilidad artística.">
+  <meta property="og:description" content="Soluciones digitales con identidad propia, criterio humano y sensibilidad artística.">
   <meta property="og:url" content="https://tukursolutions.com/">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Tukur Solutions — Tecnología con sensibilidad artística">
-  <meta name="twitter:description" content="Sitios web con identidad propia, criterio humano y sensibilidad artística.">
+  <meta name="twitter:description" content="Soluciones digitales con identidad propia, criterio humano y sensibilidad artística.">
   <link rel="icon" type="image/png" href="assets/tukur-logo-original.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,8 +28,8 @@
       font-synthesis: none;
       text-rendering: optimizeLegibility;
       -webkit-font-smoothing: antialiased;
-      --paper: #f4f2eb;
-      --paper-strong: #fffefa;
+      --paper: #ffffff;
+      --paper-strong: #f8fafc;
       --ink: #182230;
       --muted: #596575;
       --accent: #2858cc;
@@ -83,39 +83,22 @@
     a:hover .arrow { transform: translate(2px, -2px); }
 
     .brand-stage { position: relative; min-height: 430px; display: grid; place-items: center; isolation: isolate; }
-    .brand-stage::before { content: ""; position: absolute; z-index: -2; width: min(33vw, 400px); aspect-ratio: 1; border: 1px solid color-mix(in srgb, var(--accent) 30%, transparent); border-radius: 50%; }
-    .brand-stage::after { content: ""; position: absolute; z-index: -2; width: min(26vw, 315px); aspect-ratio: 1; border: 1px solid color-mix(in srgb, var(--accent) 22%, transparent); border-radius: 50%; }
     .gear-art { position: absolute; z-index: -1; width: min(39vw, 470px); height: auto; overflow: visible; }
     .rotating-gear { transform-box: fill-box; transform-origin: center; animation: gear-turn 52s linear infinite; }
-    .gear-tooth, .gear-ring { fill: var(--paper); stroke: var(--accent); stroke-width: 1.2; vector-effect: non-scaling-stroke; }
-    .gear-inner { fill: none; stroke: color-mix(in srgb, var(--accent) 58%, transparent); stroke-width: 1; vector-effect: non-scaling-stroke; }
-    .gear-spoke { fill: none; stroke: color-mix(in srgb, var(--accent) 45%, transparent); stroke-width: 1; vector-effect: non-scaling-stroke; }
-    .logo-halo { position: absolute; z-index: -1; width: 242px; height: 242px; border-radius: 50%; background: radial-gradient(circle, color-mix(in srgb, var(--accent) 27%, transparent) 0, color-mix(in srgb, var(--accent) 12%, transparent) 46%, transparent 72%); filter: blur(10px); }
+    .gear-tooth, .gear-ring { fill: var(--paper); stroke: color-mix(in srgb, var(--accent) 42%, var(--line)); stroke-width: 1.2; vector-effect: non-scaling-stroke; }
+    .gear-inner { fill: none; stroke: var(--line); stroke-width: 1; vector-effect: non-scaling-stroke; }
+    .gear-spoke { fill: none; stroke: color-mix(in srgb, var(--accent) 25%, var(--line)); stroke-width: 1; vector-effect: non-scaling-stroke; }
     .logo-wrap { position: relative; display: grid; width: 194px; height: 224px; place-items: center; }
-    .logo-wrap img { display: block; width: 154px; height: 182px; object-fit: contain; filter: drop-shadow(0 0 14px color-mix(in srgb, var(--accent) 30%, transparent)); }
-    .stage-label { position: absolute; z-index: 2; padding: 8px 11px; border: 1px solid var(--line); background: var(--paper-strong); color: var(--muted); font-size: 12px; font-weight: 500; }
-    .stage-label-human { top: 19%; left: 1%; }
-    .stage-label-ai { right: 0; bottom: 19%; }
-    .stage-link { position: absolute; z-index: -1; left: 24%; top: 50%; width: 52%; height: 1px; background: color-mix(in srgb, var(--accent) 58%, transparent); }
-    .stage-link::after { position: absolute; top: -2px; left: 0; width: 5px; height: 5px; border-radius: 50%; background: var(--accent); content: ""; animation: signal-cross 5.5s var(--ease) infinite; }
-    .stage-caption { position: absolute; bottom: 3%; left: 50%; width: 100%; transform: translateX(-50%); color: var(--muted); text-align: center; font-size: 12px; letter-spacing: .04em; }
+    .logo-wrap img { display: block; width: 154px; height: 182px; object-fit: contain; filter: drop-shadow(0 10px 14px rgb(24 34 48 / .16)); }
     .section { padding-block: clamp(70px, 9vw, 118px); border-top: 1px solid var(--line); }
     .section-heading { display: grid; grid-template-columns: 1fr minmax(230px, 350px); align-items: end; gap: 30px; margin-bottom: 38px; }
     .section-heading h2 { max-width: 730px; margin: 0; font-size: clamp(36px, 5vw, 62px); line-height: 1.04; letter-spacing: -.04em; font-weight: 700; }
     .section-heading p { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.75; }
     .intelligence-grid { position: relative; display: grid; grid-template-columns: 1fr 1fr; border-block: 1px solid var(--line); }
-    .intelligence { position: relative; min-height: 318px; padding: 38px clamp(28px, 5vw, 68px) 39px 0; }
+    .intelligence { position: relative; padding: 40px clamp(28px, 5vw, 68px) 44px 0; }
     .intelligence + .intelligence { padding-right: 0; padding-left: clamp(28px, 5vw, 68px); border-left: 1px solid var(--line); }
-    .intelligence-label { display: flex; align-items: center; gap: 11px; color: var(--accent-deep); font-size: 12px; font-weight: 500; letter-spacing: .055em; text-transform: uppercase; }
-    .intelligence-label::before { width: 9px; height: 9px; border: 1px solid var(--accent); border-radius: 50%; background: var(--paper-strong); box-shadow: inset 0 0 0 2px var(--paper-strong), 0 0 0 2px color-mix(in srgb, var(--accent) 24%, transparent); content: ""; }
-    .intelligence h3 { max-width: 460px; margin: 23px 0 14px; font-size: clamp(28px, 3.3vw, 42px); line-height: 1.1; letter-spacing: -.035em; font-weight: 700; }
-    .intelligence p { max-width: 500px; margin-bottom: 24px; color: var(--muted); font-size: 15px; line-height: 1.75; }
-    .capabilities { display: flex; flex-wrap: wrap; gap: 9px 22px; margin: 0; padding: 0; list-style: none; }
-    .capabilities li { padding-top: 9px; border-top: 1px solid var(--line); font-size: 12px; font-weight: 500; }
-    .connection { position: absolute; z-index: 3; left: 50%; top: 50%; width: min(28vw, 350px); height: auto; transform: translate(-50%, -50%); pointer-events: none; overflow: visible; }
-    .connection path { fill: none; stroke: var(--line); stroke-width: 1.25; stroke-dasharray: 4 7; }
-    .connection .endpoint { fill: var(--paper); stroke: var(--accent); stroke-width: 1.5; }
-    .connection .traveler { fill: var(--accent); }
+    .intelligence h3 { max-width: 460px; margin: 0 0 17px; color: var(--ink); font-size: clamp(28px, 3.3vw, 42px); line-height: 1.1; letter-spacing: -.035em; font-weight: 700; }
+    .intelligence p { max-width: 500px; margin: 0; color: var(--muted); font-size: 16px; line-height: 1.8; }
 
     .manifesto { max-width: 930px; margin-inline: auto; padding-block: clamp(76px, 11vw, 140px); text-align: center; }
     .manifesto p { margin: 0; font-size: clamp(27px, 4.2vw, 52px); line-height: 1.3; letter-spacing: -.035em; font-weight: 600; }
@@ -147,9 +130,12 @@
     .work-head p { max-width: 360px; margin: 0; color: var(--muted); font-size: 14px; line-height: 1.75; }
     .work-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(22px, 4vw, 46px); }
     .project { min-width: 0; }
-    .project-art { position: relative; display: block; overflow: hidden; aspect-ratio: 16 / 9; border: 1px solid var(--line); background: var(--sand); }
-    .project-art img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform .35s var(--ease); }
-    .project-art:hover img { transform: scale(1.015); }
+    .project-art { position: relative; display: block; overflow: hidden; aspect-ratio: 16 / 9; border: 1px solid var(--line); background: var(--sand); transition: border-color .25s ease; }
+    .project-art img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform .55s var(--ease); }
+    .project-art:is(:hover, :focus-visible) { border-color: var(--accent); }
+    .project-art:is(:hover, :focus-visible) img { transform: scale(1.035); }
+    .project-art-cta { position: absolute; right: 16px; bottom: 16px; display: inline-flex; min-height: 44px; align-items: center; gap: 12px; padding: 10px 14px; background: var(--ink); color: #fff; font-size: 13px; font-weight: 500; opacity: 0; transform: translateY(8px); transition: opacity .28s ease, transform .28s var(--ease); }
+    .project-art:is(:hover, :focus-visible) .project-art-cta { opacity: 1; transform: translateY(0); }
     .project-caption { padding-block: 19px 14px; border-bottom: 1px solid var(--line); }
     .project-caption h3 { margin: 0 0 5px; font-size: 20px; font-weight: 700; }
     .project-caption p { max-width: 490px; margin: 0; color: var(--muted); font-size: 14px; line-height: 1.65; }
@@ -157,11 +143,13 @@
     .project-facts div { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 14px; }
     .project-facts dt { color: var(--accent-deep); font-size: 12px; font-weight: 500; }
     .project-facts dd { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
-    .case-toggle { width: 100%; display: none; align-items: center; justify-content: space-between; gap: 15px; padding: 15px 0; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--ink); text-align: left; cursor: pointer; }
+    .case-toggle { width: 100%; display: none; align-items: center; justify-content: space-between; gap: 15px; padding: 15px 0; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--ink); text-align: left; cursor: pointer; transition: color .2s ease, border-color .2s ease; }
     .js .case-toggle { display: flex; }
+    .case-toggle:hover { color: var(--accent-deep); border-color: var(--accent); }
     .case-toggle span:first-child { font-size: 13px; font-weight: 500; }
     .case-toggle .plus { color: var(--accent); font-size: 20px; line-height: 1; transition: transform .22s var(--ease); }
-    .case-toggle[aria-expanded="true"] .plus { transform: rotate(45deg); }
+    .case-toggle:hover .plus { transform: rotate(90deg); }
+    .case-toggle[aria-expanded="true"] .plus, .case-toggle[aria-expanded="true"]:hover .plus { transform: rotate(45deg); }
     .case-detail { display: block; }
     .js .case-detail { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .28s var(--ease); }
     .js .case-detail[data-open="true"] { grid-template-rows: 1fr; }
@@ -185,10 +173,10 @@
     .motion-control svg { width: 14px; height: 14px; fill: none; stroke: currentColor; stroke-width: 1.7; }
     html.motion-off { scroll-behavior: auto; }
     html.motion-off *, html.motion-off *::before, html.motion-off *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
-    html.motion-off .connection .traveler { visibility: hidden; }
-
     @keyframes gear-turn { to { transform: rotate(360deg); } }
-    @keyframes signal-cross { from { left: 0; } to { left: calc(100% - 5px); } }
+    @media (hover: none) {
+      .project-art-cta { opacity: 1; transform: none; }
+    }
     @media (max-width: 820px) {
       .shell { width: min(var(--content), calc(100% - 44px)); }
       .header { min-height: 72px; }
@@ -200,10 +188,8 @@
       .brand-stage { min-height: 350px; }
       .logo-wrap { width: 166px; height: 190px; }
       .logo-wrap img { width: 132px; height: 158px; }
-      .stage-label-human { left: -1%; }
       .section-heading { grid-template-columns: 1fr; gap: 16px; }
       .section-heading p { max-width: 520px; }
-      .connection { width: 28vw; }
     }
     @media (max-width: 760px) {
       .shell { width: calc(100% - 40px); }
@@ -223,23 +209,16 @@
       .hero h1 { max-width: 570px; font-size: clamp(46px, 13vw, 68px); }
       .hero-lede { font-size: 15px; }
       .brand-stage { min-height: 330px; }
-      .brand-stage::before { width: 278px; }
-      .brand-stage::after { width: 224px; }
       .gear-art { width: 310px; }
-      .logo-halo { width: 204px; height: 204px; }
       .logo-wrap { width: 148px; height: 171px; }
       .logo-wrap img { width: 120px; height: 142px; }
-      .stage-label-human { top: 13%; left: 0; }
-      .stage-label-ai { right: 0; bottom: 16%; }
-      .stage-caption { bottom: 0; }
       .section { padding-block: 68px; }
       .section-heading { margin-bottom: 25px; }
       .section-heading h2 { font-size: clamp(34px, 10vw, 48px); }
       .intelligence-grid { grid-template-columns: 1fr; }
       .intelligence { min-height: 0; padding: 27px 0 33px; }
       .intelligence + .intelligence { padding: 32px 0; border-top: 1px solid var(--line); border-left: 0; }
-      .intelligence h3 { margin-top: 18px; font-size: 34px; }
-      .connection { top: 50%; width: 114px; transform: translate(-50%, -50%) rotate(90deg); }
+      .intelligence h3 { font-size: 34px; }
       .manifesto { padding-block: 74px; }
       .manifesto p { font-size: clamp(28px, 8.5vw, 39px); }
       .process { grid-template-columns: 1fr; gap: 18px; }
@@ -287,7 +266,7 @@
     <section class="hero shell" id="inicio" aria-labelledby="hero-title">
       <div class="hero-copy">
         <h1 id="hero-title">Tecnología con <span>sensibilidad artística.</span></h1>
-        <p class="hero-lede">Diseñamos y construimos sitios web con identidad propia. Escuchamos tu idea, ordenamos lo que importa y elegimos la tecnología que mejor la hace realidad.</p>
+        <p class="hero-lede">Diseñamos y construimos soluciones digitales con identidad propia. Escuchamos tu idea, ordenamos lo que importa y elegimos la tecnología que mejor la hace realidad.</p>
         <div class="actions">
           <a class="button button-primary" href="#contacto">Contanos qué querés resolver <span class="arrow" aria-hidden="true">↗</span></a>
           <a class="button button-secondary" href="#trabajo">Ver proyectos</a>
@@ -316,12 +295,7 @@
             </g>
           </g>
         </svg>
-        <div class="logo-halo" aria-hidden="true"></div>
-        <span class="stage-link" aria-hidden="true"></span>
-        <span class="stage-label stage-label-human">Inteligencia natural</span>
-        <span class="stage-label stage-label-ai">Inteligencia artificial</span>
         <div class="logo-wrap"><img src="assets/tukur-logo-original.png" alt="" width="422" height="497" fetchpriority="high"></div>
-        <p class="stage-caption">Dos inteligencias. Una dirección humana.</p>
       </div>
     </section>
 
@@ -329,26 +303,17 @@
       <div class="shell">
         <div class="section-heading">
           <h2 id="intelligence-title">Utilizamos dos inteligencias.</h2>
-          <p>La inteligencia natural define el rumbo; la artificial ayuda a convertir esas decisiones en soluciones.</p>
+          <p>Primero entendemos y decidimos con criterio humano. Después usamos la tecnología para construir lo que realmente hace falta.</p>
         </div>
         <div class="intelligence-grid">
           <article class="intelligence">
-            <div class="intelligence-label">Inteligencia natural</div>
-            <h3>La que comprende el contexto.</h3>
-            <p>Comprende a las personas, analiza el reto, diseña la experiencia y decide qué vale la pena construir.</p>
-            <ul class="capabilities"><li>Comprende</li><li>Analiza</li><li>Decide</li><li>Diseña</li></ul>
+            <h3>Inteligencia natural</h3>
+            <p>Comprendemos a las personas y su contexto, analizamos el reto, tomamos decisiones y diseñamos la experiencia. Así definimos qué vale la pena construir.</p>
           </article>
           <article class="intelligence">
-            <div class="intelligence-label">Inteligencia artificial</div>
-            <h3>La que ayuda a construir.</h3>
-            <p>Ayuda a explorar posibilidades y construir con más agilidad, siempre guiada por una intención humana.</p>
-            <ul class="capabilities"><li>Explora</li><li>Acelera</li><li>Construye</li><li>Apoya</li></ul>
+            <h3>Inteligencia artificial</h3>
+            <p>Nos ayuda a explorar posibilidades y construir con más agilidad. Cada resultado necesita a una persona que lo guíe, lo revise y decida si resuelve el problema.</p>
           </article>
-          <svg class="connection" viewBox="0 0 350 90" role="img" aria-label="Una señal viaja del criterio humano hacia la construcción tecnológica">
-            <path d="M4 45 C84 45 100 17 174 17 S268 72 346 45"/>
-            <circle class="endpoint" cx="6" cy="45" r="5"/><circle class="endpoint" cx="344" cy="45" r="5"/>
-            <circle class="traveler" r="4"><animateMotion dur="6s" repeatCount="indefinite" path="M4 45 C84 45 100 17 174 17 S268 72 346 45"/></circle>
-          </svg>
         </div>
         <div class="manifesto">
           <p>La IA acelera el trabajo.<br><em>La dirección sigue siendo humana.</em></p>
@@ -409,9 +374,9 @@
         </div>
         <div class="work-grid">
           <article class="project">
-            <a class="project-art" href="https://web-fipq.animesino.workers.dev/" target="_blank" rel="noopener noreferrer">
-              <span class="sr-only">Abrir el sitio publicado del FIPQ en una nueva pestaña. </span>
+            <a class="project-art" href="https://web-fipq.animesino.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="Explorar el sitio publicado del FIPQ en una nueva pestaña">
               <img src="assets/fipq-captura-interior.webp" alt="Captura del FIPQ: festival y Metáfora Editores en dos paneles visuales" width="1265" height="711" loading="lazy" decoding="async">
+              <span class="project-art-cta" aria-hidden="true">Explorar sitio <span class="arrow">↗</span></span>
             </a>
             <div class="project-caption"><h3>Festival Internacional de Poesía de Quetzaltenango</h3><p>Un espacio digital para reunir el festival y Metáfora Editores.</p></div>
             <dl class="project-facts"><div><dt>Mi aporte</dt><dd>Desde el equipo del festival, propuse su espacio digital y trabajé la identidad visual, la organización del contenido y su tono.</dd></div><div><dt>Entrega</dt><dd>Sitio publicado que reúne información del festival y presenta Metáfora Editores.</dd></div></dl>
@@ -420,9 +385,9 @@
             <a class="project-link" href="https://web-fipq.animesino.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="Visitar el sitio de FIPQ en una nueva pestaña">Visitar el sitio <span class="arrow" aria-hidden="true">↗</span></a>
           </article>
           <article class="project">
-            <a class="project-art" href="https://witchustudio.com/#inicio" target="_blank" rel="noopener noreferrer">
-              <span class="sr-only">Abrir el portafolio publicado de Luis Gómez en una nueva pestaña. </span>
+            <a class="project-art" href="https://witchustudio.com/#inicio" target="_blank" rel="noopener noreferrer" aria-label="Explorar el portafolio publicado de Luis Gómez en una nueva pestaña">
               <img src="assets/witchu-captura-real.webp" alt="Captura de Witchu: titular principal, menú y retrato de Luis Gómez" width="1270" height="714" loading="lazy" decoding="async">
+              <span class="project-art-cta" aria-hidden="true">Explorar sitio <span class="arrow">↗</span></span>
             </a>
             <div class="project-caption"><h3>Witchu · Luis Gómez</h3><p>Un portafolio para mostrar su trabajo de diseño gráfico e ilustración.</p></div>
             <dl class="project-facts"><div><dt>Mi aporte</dt><dd>Diseñé la estructura y el recorrido del portafolio junto con Luis, respetando su obra visual.</dd></div><div><dt>Entrega</dt><dd>Sitio publicado que organiza proyectos por categoría, presenta servicios y facilita el contacto.</dd></div></dl>
@@ -467,9 +432,6 @@
     function setMotionOff(isOff) {
       html.classList.toggle('motion-off', isOff);
       motionButton.querySelector('span').textContent = isOff ? 'Activar movimiento' : 'Reducir movimiento';
-      document.querySelectorAll('.connection animateMotion').forEach((motion) => {
-        try { if (isOff) motion.endElement(); else motion.beginElement(); } catch (_) {}
-      });
     }
 
     if (reducedMotion.matches) setMotionOff(true);

@@ -6,32 +6,32 @@
     "colorMeta": {
       "paper": {
         "role": "neutral",
-        "displayName": "Marfil base",
-        "canonical": "#f4f2eb",
+        "displayName": "Blanco base",
+        "canonical": "#ffffff",
         "tonalRamp": [
-          "oklch(18% 0.0095 93.6)",
-          "oklch(30% 0.0095 93.6)",
-          "oklch(42% 0.0095 93.6)",
-          "oklch(54% 0.0095 93.6)",
-          "oklch(66% 0.0095 93.6)",
-          "oklch(78% 0.0095 93.6)",
-          "oklch(88% 0.0095 93.6)",
-          "oklch(96% 0.0095 93.6)"
+          "oklch(18% 0 0)",
+          "oklch(30% 0 0)",
+          "oklch(42% 0 0)",
+          "oklch(54% 0 0)",
+          "oklch(66% 0 0)",
+          "oklch(78% 0 0)",
+          "oklch(88% 0 0)",
+          "oklch(96% 0 0)"
         ]
       },
       "paper-strong": {
         "role": "neutral",
-        "displayName": "Marfil luminoso",
-        "canonical": "#fffefa",
+        "displayName": "Blanco frío",
+        "canonical": "#f8fafc",
         "tonalRamp": [
-          "oklch(18% 0.0054 95.1)",
-          "oklch(30% 0.0054 95.1)",
-          "oklch(42% 0.0054 95.1)",
-          "oklch(54% 0.0054 95.1)",
-          "oklch(66% 0.0054 95.1)",
-          "oklch(78% 0.0054 95.1)",
-          "oklch(88% 0.0054 95.1)",
-          "oklch(96% 0.0054 95.1)"
+          "oklch(18% 0.005 255)",
+          "oklch(30% 0.005 255)",
+          "oklch(42% 0.005 255)",
+          "oklch(54% 0.005 255)",
+          "oklch(66% 0.005 255)",
+          "oklch(78% 0.005 255)",
+          "oklch(88% 0.005 255)",
+          "oklch(96% 0.005 255)"
         ]
       },
       "ink": {
@@ -149,9 +149,9 @@
     },
     "shadows": [
       {
-        "name": "halo-logo",
-        "value": "drop-shadow(0 0 14px color-mix(in srgb, var(--accent) 30%, transparent))",
-        "purpose": "Iluminar el exterior del PNG original sin modificarlo."
+        "name": "logo-shadow",
+        "value": "drop-shadow(0 10px 14px rgb(24 34 48 / .16))",
+        "purpose": "Dar profundidad al PNG original sin modificarlo."
       }
     ],
     "motion": [
@@ -166,19 +166,14 @@
         "purpose": "Giro lento del engranaje detrás del logo."
       },
       {
-        "name": "signal-cross",
-        "value": "5.5s var(--ease) infinite",
-        "purpose": "Señal que recorre la conexión del escenario."
-      },
-      {
         "name": "hover",
         "value": ".2s",
         "purpose": "Respuesta de botones, enlaces y navegación."
       },
       {
         "name": "project-image-hover",
-        "value": ".35s var(--ease)",
-        "purpose": "Acercamiento leve de las capturas al pasar el cursor."
+        "value": ".55s var(--ease)",
+        "purpose": "Acercamiento leve de las capturas al pasar el cursor o enfocarlas."
       },
       {
         "name": "case-detail",
@@ -208,7 +203,7 @@
       "kind": "button",
       "description": "Acción dominante para empezar una conversación sobre el proyecto.",
       "html": "<a class=\"ds-button-primary\" href=\"#contacto\">Contanos qué querés resolver <span aria-hidden=\"true\">↗</span></a>",
-      "css": ".ds-button-primary { display:inline-flex; min-height:48px; align-items:center; justify-content:center; gap:12px; padding:13px 18px; border:1px solid var(--accent, #2858cc); border-radius:0; background:var(--accent, #2858cc); color:var(--paper-strong, #fffefa); font:500 13px/1.4 \"Manrope\",sans-serif; text-decoration:none; transition:transform .2s cubic-bezier(.16,1,.3,1), background .2s ease, border-color .2s ease; }\n.ds-button-primary:hover { transform:translateY(-2px); border-color:var(--accent-deep, #1d4299); background:var(--accent-deep, #1d4299); }\n.ds-button-primary:focus-visible { outline:3px solid var(--accent, #2858cc); outline-offset:4px; }",
+      "css": ".ds-button-primary { display:inline-flex; min-height:48px; align-items:center; justify-content:center; gap:12px; padding:13px 18px; border:1px solid var(--accent, #2858cc); border-radius:0; background:var(--accent, #2858cc); color:var(--paper-strong, #f8fafc); font:500 13px/1.4 \"Manrope\",sans-serif; text-decoration:none; transition:transform .2s cubic-bezier(.16,1,.3,1), background .2s ease, border-color .2s ease; }\n.ds-button-primary:hover { transform:translateY(-2px); border-color:var(--accent-deep, #1d4299); background:var(--accent-deep, #1d4299); }\n.ds-button-primary:focus-visible { outline:3px solid var(--accent, #2858cc); outline-offset:4px; }",
       "refersTo": "button-primary"
     },
     {
@@ -224,7 +219,7 @@
       "kind": "nav",
       "description": "Enlaces directos a la oferta, la filosofía, los proyectos, el proceso y el contacto.",
       "html": "<nav class=\"ds-nav\" aria-label=\"Navegación principal\"><a href=\"#servicios\">Servicios</a><a href=\"#filosofia\">Filosofía</a><a href=\"#trabajo\">Proyectos</a><a href=\"#proceso\">Proceso</a><a class=\"ds-nav-cta\" href=\"#contacto\">Hablemos ↗</a></nav>",
-      "css": ".ds-nav { display:flex; align-items:center; flex-wrap:wrap; gap:clamp(20px,3vw,42px); font-family:\"Manrope\",sans-serif; }\n.ds-nav a { display:inline-flex; min-height:44px; align-items:center; color:var(--muted, #596575); font-size:13px; font-weight:500; text-decoration:none; transition:color .2s ease; }\n.ds-nav a:hover { color:var(--accent-deep, #1d4299); }\n.ds-nav .ds-nav-cta { padding:12px 17px; background:var(--accent, #2858cc); color:var(--paper-strong, #fffefa); transition:background .2s ease, transform .2s cubic-bezier(.16,1,.3,1); }\n.ds-nav .ds-nav-cta:hover { background:var(--accent-deep, #1d4299); color:var(--paper-strong, #fffefa); transform:translateY(-2px); }\n.ds-nav a:focus-visible { outline:3px solid var(--accent, #2858cc); outline-offset:4px; }\n@media (max-width:760px) { .ds-nav { align-items:stretch; flex-direction:column; gap:0; } .ds-nav a { padding:15px 3px; border-bottom:1px solid var(--line, #cfd5df); font-size:14px; } .ds-nav .ds-nav-cta { justify-content:center; margin-top:12px; padding:13px 15px; border:0; } }"
+      "css": ".ds-nav { display:flex; align-items:center; flex-wrap:wrap; gap:clamp(20px,3vw,42px); font-family:\"Manrope\",sans-serif; }\n.ds-nav a { display:inline-flex; min-height:44px; align-items:center; color:var(--muted, #596575); font-size:13px; font-weight:500; text-decoration:none; transition:color .2s ease; }\n.ds-nav a:hover { color:var(--accent-deep, #1d4299); }\n.ds-nav .ds-nav-cta { padding:12px 17px; background:var(--accent, #2858cc); color:var(--paper-strong, #f8fafc); transition:background .2s ease, transform .2s cubic-bezier(.16,1,.3,1); }\n.ds-nav .ds-nav-cta:hover { background:var(--accent-deep, #1d4299); color:var(--paper-strong, #f8fafc); transform:translateY(-2px); }\n.ds-nav a:focus-visible { outline:3px solid var(--accent, #2858cc); outline-offset:4px; }\n@media (max-width:760px) { .ds-nav { align-items:stretch; flex-direction:column; gap:0; } .ds-nav a { padding:15px 3px; border-bottom:1px solid var(--line, #cfd5df); font-size:14px; } .ds-nav .ds-nav-cta { justify-content:center; margin-top:12px; padding:13px 15px; border:0; } }"
     },
     {
       "name": "Datos de proyecto",
@@ -238,19 +233,19 @@
       "kind": "card",
       "description": "Cierre oscuro de la página con una acción clara de correo.",
       "html": "<section class=\"ds-contact-panel\"><div><h2>No necesitás llegar con la solución resuelta.</h2><p>Contame qué querés compartir, mejorar o construir, y quiénes lo van a usar.</p></div><a class=\"ds-contact-button\" href=\"mailto:mylothings29@gmail.com\">Escribir a Tukur ↗</a></section>",
-      "css": ".ds-contact-panel { position:relative; overflow:hidden; display:grid; grid-template-columns:1fr auto; align-items:end; gap:35px; padding:clamp(38px,6vw,76px); border-radius:0; background:var(--ink, #182230); color:var(--paper-strong, #fffefa); font-family:\"Manrope\",sans-serif; }\n.ds-contact-panel h2 { max-width:740px; margin:0 0 15px; font-size:clamp(32px,4.8vw,58px); font-weight:700; line-height:1.05; letter-spacing:-.04em; }\n.ds-contact-panel p { max-width:620px; margin:0; color:#e0e5ee; font-size:15px; line-height:1.75; }\n.ds-contact-button { display:inline-flex; min-height:48px; align-items:center; justify-content:center; padding:13px 18px; border:1px solid var(--paper-strong, #fffefa); background:var(--paper-strong, #fffefa); color:var(--ink, #182230); font-size:13px; font-weight:500; white-space:nowrap; text-decoration:none; transition:background .2s ease, border-color .2s ease, color .2s ease, transform .2s cubic-bezier(.16,1,.3,1); }\n.ds-contact-button:hover { transform:translateY(-2px); border-color:#9db8ff; background:var(--accent, #2858cc); color:#fff; }\n.ds-contact-button:focus-visible { outline:3px solid var(--accent, #2858cc); outline-offset:4px; }\n@media (max-width:760px) { .ds-contact-panel { grid-template-columns:1fr; align-items:start; gap:25px; padding:34px 24px; } }",
+      "css": ".ds-contact-panel { position:relative; overflow:hidden; display:grid; grid-template-columns:1fr auto; align-items:end; gap:35px; padding:clamp(38px,6vw,76px); border-radius:0; background:var(--ink, #182230); color:var(--paper-strong, #f8fafc); font-family:\"Manrope\",sans-serif; }\n.ds-contact-panel h2 { max-width:740px; margin:0 0 15px; font-size:clamp(32px,4.8vw,58px); font-weight:700; line-height:1.05; letter-spacing:-.04em; }\n.ds-contact-panel p { max-width:620px; margin:0; color:#e0e5ee; font-size:15px; line-height:1.75; }\n.ds-contact-button { display:inline-flex; min-height:48px; align-items:center; justify-content:center; padding:13px 18px; border:1px solid var(--paper-strong, #f8fafc); background:var(--paper-strong, #f8fafc); color:var(--ink, #182230); font-size:13px; font-weight:500; white-space:nowrap; text-decoration:none; transition:background .2s ease, border-color .2s ease, color .2s ease, transform .2s cubic-bezier(.16,1,.3,1); }\n.ds-contact-button:hover { transform:translateY(-2px); border-color:#9db8ff; background:var(--accent, #2858cc); color:#fff; }\n.ds-contact-button:focus-visible { outline:3px solid var(--accent, #2858cc); outline-offset:4px; }\n@media (max-width:760px) { .ds-contact-panel { grid-template-columns:1fr; align-items:start; gap:25px; padding:34px 24px; } }",
       "refersTo": "contact-panel"
     }
   ],
   "narrative": {
     "northStar": "El taller del búho",
-    "overview": "Tukur se presenta como un espacio donde una persona observa, interpreta, decide y diseña antes de construir con tecnología. La página combina la precisión de un estudio digital con la sensibilidad de un taller artístico. El búho original es la firma; el engranaje y las líneas de conexión muestran el proceso sin convertir la marca en una estética genérica de IA.\n\nLa identidad usa mucho espacio, una jerarquía editorial clara y una paleta corta. Las expresiones de cada cliente pueden ser distintas entre sí; el marco de Tukur conserva siempre su propia voz. La referencia editorial de Awesome DESIGN.md para Mistral.ai orientó la jerarquía, el ritmo y el uso selectivo del acento; sus colores, tipografías y elementos de marca no forman parte de Tukur.",
+    "overview": "Tukur se presenta como un espacio donde una persona observa, interpreta, decide y diseña antes de construir con tecnología. La página combina la precisión de un estudio digital con la sensibilidad de un taller artístico. El búho original es la firma; el engranaje expresa el proceso sin competir con la lectura.\n\nLa identidad usa mucho espacio, una jerarquía editorial clara y una paleta corta. Las expresiones de cada cliente pueden ser distintas entre sí; el marco de Tukur conserva siempre su propia voz. La referencia editorial de Awesome DESIGN.md para Mistral.ai orientó la jerarquía, el ritmo y el uso selectivo del acento; sus colores, tipografías y elementos de marca no forman parte de Tukur.",
     "keyCharacteristics": [
       "Logo original de búho y engranaje, sin redibujar ni recolorear.",
-      "Marfil cálido, tinta azul oscuro y un único acento cobalto.",
+      "Blanco, tinta azul oscuro y un único acento cobalto.",
       "Manrope en todos los textos, con pesos asignados por función.",
       "Composición editorial de bordes rectos, líneas finas y círculos como motivo secundario.",
-      "Movimiento lento que explica la relación entre criterio humano y construcción tecnológica."
+      "Movimiento lento en el engranaje y respuestas breves al explorar proyectos."
     ],
     "rules": [
       {
@@ -271,7 +266,7 @@
     ],
     "dos": [
       "**Do** usar el PNG original transparente y darle presencia con espacio, escala y luz externa.",
-      "**Do** mantener la secuencia marfil → información clara → trabajo real → panel de contacto oscuro.",
+      "**Do** mantener la secuencia blanco → información clara → trabajo real → panel de contacto oscuro.",
       "**Do** aplicar Manrope con los pesos de marca: `600/700` títulos, `400` párrafos y `500` botones y etiquetas.",
       "**Do** reservar el cobalto para llamadas a la acción, enlaces, foco y conexiones visuales.",
       "**Do** mostrar el aporte de Tukur junto al trabajo de cada cliente, con crédito preciso.",
