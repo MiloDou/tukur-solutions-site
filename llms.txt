@@ -1,0 +1,14 @@
+# Tukur Solutions
+
+> Diseñamos y construimos sitios web con identidad propia, criterio humano y sensibilidad artística desde Guatemala.
+
+Tukur Solutions combina inteligencia natural para comprender, analizar, decidir y diseñar con inteligencia artificial como apoyo para explorar y construir. La dirección de cada proyecto sigue siendo humana. El alcance se define con cada cliente.
+
+## Sitio oficial
+
+- [Inicio](https://tukursolutions.com/): Presentación de Tukur Solutions y su propuesta.
+- [Filosofía](https://tukursolutions.com/#filosofia): Cómo trabajan juntas la inteligencia natural y la artificial.
+- [Servicios](https://tukursolutions.com/#servicios): Sitios web, portafolios, diseño y dirección digital.
+- [Proceso](https://tukursolutions.com/#proceso): Escuchar, definir y construir con el cliente.
+- [Proyectos](https://tukursolutions.com/#trabajo): Festival Internacional de Poesía de Quetzaltenango y Witchu, el portafolio de Luis Gómez.
+- [Contacto](https://tukursolutions.com/#contacto): Información para conversar sobre un proyecto.
