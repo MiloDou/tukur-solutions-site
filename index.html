@@ -141,6 +141,7 @@
     .work-head p { max-width: 360px; margin: 0; color: var(--muted); font-size: 14px; line-height: 1.75; }
     .work-grid { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(22px, 4vw, 46px); }
     .project { min-width: 0; }
+    .project-visual { position: relative; }
     .project-art { position: relative; display: block; overflow: hidden; aspect-ratio: 16 / 9; border: 1px solid var(--line); background: var(--sand); transition: border-color .25s ease; }
     .project-art img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; transition: transform .55s var(--ease); }
     .project-art:is(:hover, :focus-visible) { border-color: var(--accent); }
@@ -158,9 +159,9 @@
     .project-facts div { display: grid; grid-template-columns: 72px minmax(0, 1fr); gap: 14px; }
     .project-facts dt { color: var(--accent-deep); font-size: 12px; font-weight: 500; }
     .project-facts dd { margin: 0; color: var(--muted); font-size: 13px; line-height: 1.6; }
-    .case-toggle { width: 100%; display: none; align-items: center; justify-content: space-between; gap: 15px; padding: 15px 0; border: 0; border-bottom: 1px solid var(--line); background: transparent; color: var(--ink); text-align: left; cursor: pointer; transition: color .2s ease, border-color .2s ease; }
-    .js .case-toggle { display: flex; }
-    .case-toggle:hover { color: var(--accent-deep); border-color: var(--accent); }
+    .case-toggle { position: absolute; z-index: 2; bottom: 16px; left: 16px; display: none; min-height: 44px; align-items: center; gap: 15px; padding: 10px 14px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); text-align: left; cursor: pointer; transition: color .2s ease, border-color .2s ease, transform .28s var(--ease); }
+    .js .case-toggle { display: inline-flex; }
+    .case-toggle:hover { color: var(--accent-deep); border-color: var(--accent); transform: translateY(-3px); }
     .case-toggle span:first-child { font-size: 13px; font-weight: 500; }
     .case-toggle .plus { color: var(--accent); font-size: 20px; line-height: 1; transition: transform .22s var(--ease); }
     .case-toggle:hover .plus { transform: rotate(90deg); }
@@ -244,6 +245,7 @@
       .work-head h2 { font-size: 42px; }
       .work-grid { grid-template-columns: 1fr; gap: 35px; }
       .project-annotation { display: none; }
+      .case-toggle { top: 12px; bottom: auto; left: 12px; }
       .service-card { min-height: 0; padding: 24px 0; }
       .service-card + .service-card { padding: 24px 0; border-top: 1px solid var(--line); border-left: 0; }
       .services-grid { grid-template-columns: 1fr; }
@@ -394,28 +396,32 @@
         </div>
         <div class="work-grid">
           <article class="project" data-case-open="false">
-            <a class="project-art" href="https://web-fipq.animesino.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="Explorar el sitio publicado del FIPQ en una nueva pestaña">
-              <img src="assets/fipq-captura-interior.webp" alt="Captura del FIPQ: festival y Metáfora Editores en dos paneles visuales" width="1265" height="711" loading="lazy" decoding="async">
-              <span class="project-annotation note-start" aria-hidden="true">El festival, en primer plano</span>
-              <span class="project-annotation note-end" aria-hidden="true">Un espacio para Metáfora Editores</span>
-              <span class="project-art-cta" aria-hidden="true">Explorar sitio <span class="arrow">↗</span></span>
-            </a>
+            <div class="project-visual">
+              <a class="project-art" href="https://web-fipq.animesino.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="Explorar el sitio publicado del FIPQ en una nueva pestaña">
+                <img src="assets/fipq-captura-interior.webp" alt="Captura del FIPQ: festival y Metáfora Editores en dos paneles visuales" width="1265" height="711" loading="lazy" decoding="async">
+                <span class="project-annotation note-start" aria-hidden="true">El festival, en primer plano</span>
+                <span class="project-annotation note-end" aria-hidden="true">Un espacio para Metáfora Editores</span>
+                <span class="project-art-cta" aria-hidden="true">Explorar sitio <span class="arrow">↗</span></span>
+              </a>
+              <button class="case-toggle" type="button" aria-expanded="false" aria-controls="case-fipq"><span>Ver el proceso</span><span class="plus" aria-hidden="true">+</span></button>
+            </div>
             <div class="project-caption"><h3>Festival Internacional de Poesía de Quetzaltenango</h3><p>Un espacio digital para reunir el festival y Metáfora Editores.</p></div>
-            <button class="case-toggle" type="button" aria-expanded="false" aria-controls="case-fipq"><span>Ver el proceso</span><span class="plus" aria-hidden="true">+</span></button>
-            <div class="case-detail" id="case-fipq" data-open="false"><div><ul class="case-story"><li><strong>Necesidad</strong><span>Reunir la información del festival fuera de publicaciones dispersas.</span></li><li><strong>Decisión</strong><span>Dar al festival y a Metáfora Editores espacios reconocibles dentro del mismo sitio.</span></li><li><strong>Entrega</strong><span>Una página publicada que conserva el tono poético del proyecto.</span></li></ul></div></div>
+            <div class="case-detail" id="case-fipq" data-open="false"><div><ul class="case-story"><li><strong>Necesidad</strong><span>Reunir la información del festival fuera de publicaciones dispersas.</span></li><li><strong>Decisión</strong><span>Dar al festival y a Metáfora Editores espacios reconocibles dentro del mismo sitio, sin perder el tono poético.</span></li></ul></div></div>
             <dl class="project-facts"><div><dt>Mi aporte</dt><dd>Desde el equipo del festival, propuse su espacio digital y trabajé la identidad visual, la organización del contenido y su tono.</dd></div><div><dt>Entrega</dt><dd>Sitio publicado que reúne información del festival y presenta Metáfora Editores.</dd></div></dl>
             <a class="project-link" href="https://web-fipq.animesino.workers.dev/" target="_blank" rel="noopener noreferrer" aria-label="Visitar el sitio de FIPQ en una nueva pestaña">Visitar el sitio <span class="arrow" aria-hidden="true">↗</span></a>
           </article>
           <article class="project" data-case-open="false">
-            <a class="project-art" href="https://witchustudio.com/#inicio" target="_blank" rel="noopener noreferrer" aria-label="Explorar el portafolio publicado de Luis Gómez en una nueva pestaña">
-              <img src="assets/witchu-captura-real.webp" alt="Captura de Witchu: titular principal, menú y retrato de Luis Gómez" width="1270" height="714" loading="lazy" decoding="async">
-              <span class="project-annotation note-start" aria-hidden="true">Una voz visual propia</span>
-              <span class="project-annotation note-end" aria-hidden="true">Luis como protagonista</span>
-              <span class="project-art-cta" aria-hidden="true">Explorar sitio <span class="arrow">↗</span></span>
-            </a>
+            <div class="project-visual">
+              <a class="project-art" href="https://witchustudio.com/#inicio" target="_blank" rel="noopener noreferrer" aria-label="Explorar el portafolio publicado de Luis Gómez en una nueva pestaña">
+                <img src="assets/witchu-captura-real.webp" alt="Captura de Witchu: titular principal, menú y retrato de Luis Gómez" width="1270" height="714" loading="lazy" decoding="async">
+                <span class="project-annotation note-start" aria-hidden="true">Una voz visual propia</span>
+                <span class="project-annotation note-end" aria-hidden="true">Luis como protagonista</span>
+                <span class="project-art-cta" aria-hidden="true">Explorar sitio <span class="arrow">↗</span></span>
+              </a>
+              <button class="case-toggle" type="button" aria-expanded="false" aria-controls="case-luis"><span>Ver el proceso</span><span class="plus" aria-hidden="true">+</span></button>
+            </div>
             <div class="project-caption"><h3>Witchu · Luis Gómez</h3><p>Un portafolio para mostrar su trabajo de diseño gráfico e ilustración.</p></div>
-            <button class="case-toggle" type="button" aria-expanded="false" aria-controls="case-luis"><span>Ver el proceso</span><span class="plus" aria-hidden="true">+</span></button>
-            <div class="case-detail" id="case-luis" data-open="false"><div><ul class="case-story"><li><strong>Necesidad</strong><span>Mostrar el trabajo de diseño gráfico e ilustración de Luis en un portafolio claro.</span></li><li><strong>Decisión</strong><span>Organizar los proyectos por categoría y conectar el recorrido con servicios y contacto.</span></li><li><strong>Entrega</strong><span>Un sitio publicado que conserva la voz artística de Witchu y acredita a Tukur en el desarrollo.</span></li></ul></div></div>
+            <div class="case-detail" id="case-luis" data-open="false"><div><ul class="case-story"><li><strong>Necesidad</strong><span>Mostrar el trabajo de diseño gráfico e ilustración de Luis sin perder su voz artística.</span></li><li><strong>Decisión</strong><span>Organizar los proyectos por categoría y conectar el recorrido con servicios y contacto.</span></li></ul></div></div>
             <dl class="project-facts"><div><dt>Mi aporte</dt><dd>Diseñé la estructura y el recorrido del portafolio junto con Luis, respetando su obra visual.</dd></div><div><dt>Entrega</dt><dd>Sitio publicado que organiza proyectos por categoría, presenta servicios y facilita el contacto.</dd></div></dl>
             <a class="project-link" href="https://witchustudio.com/#inicio" target="_blank" rel="noopener noreferrer" aria-label="Visitar el portafolio de Luis Gómez en una nueva pestaña">Visitar el portafolio <span class="arrow" aria-hidden="true">↗</span></a>
           </article>
